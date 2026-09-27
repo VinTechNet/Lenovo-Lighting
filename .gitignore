@@ -1,0 +1,14 @@
+# Runtime logs (the services write these via --log under pythonw)
+*.log
+*.log.old
+
+# Live state, local to one machine
+settings.json
+.suspend_state.json
+
+# Captures produced by the verification tooling
+*.png
+
+__pycache__/
+*.pyc
+.DS_Store
