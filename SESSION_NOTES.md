@@ -184,7 +184,14 @@ rounds of ambiguous visual descriptions.
   `python musiclight.py --recover-only` (or `restore.py`) afterwards.
 - `run_hidden.py`-style console flashing: not an issue here, the subprocess that
   could have caused it was removed in 3.7.
-- Not in git — `C:\Projects\ai` shows `?? lenovo-light/`. Worth committing.
+- **Git:** this folder is its own repo, pushed to
+  <https://github.com/VinTechNet/Lenovo-Lighting> (public, branch `main`).
+  It is deliberately *separate* from the `C:\Projects\ai` repo that contains
+  it — that parent holds unrelated work (email scripts, VideoMaker, towing),
+  so binding it to this remote would risk publishing all of it. Run git
+  commands from inside `lenovo-light/`, never the parent.
+  `settings.json`, `.suspend_state.json` and `*.log` are gitignored as local
+  runtime state.
 - Ideas not pursued: per-app/media-aware colour themes, beat-locked animation,
   a spectrum on the Legion's rear light bar (if it exposes one), and an
   `--effect` that mirrors the keyboard hue onto the wallpaper.
